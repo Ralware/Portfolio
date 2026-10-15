@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Your Name</title>
+  <meta name="description" content="Explore projects by Your Name.">
+  <link rel="icon" type="image/svg+xml" href="assets/placeholder.svg">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/space.css">
+  <script>
+    // Pure dark mode.
+    document.documentElement.dataset.theme = "dark";
+    try { localStorage.setItem("portfolio-theme", "dark"); } catch (e) {}
+  </script>
+</head>
+<body>
+  <div id="loader" aria-hidden="true">
+    <div class="l-inner"><span class="l-logo">yourname.</span><div class="l-bar"><div class="l-fill"></div></div></div>
+  </div>
+
+  <header id="site-nav"></header>
+  <div class="nav-spacer"></div>
+
+  <main class="wrap-wide" style="position:relative;z-index:1">
+    <div class="split" id="projects-split"></div>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/palette.js"></script>
+  <script src="js/effects.js"></script>
+  <script src="js/space.js"></script>
+  <script src="js/projects.js"></script>
+</body>
+</html>
